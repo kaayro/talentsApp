@@ -1,0 +1,27 @@
+.block{
+    display:flex;
+    padding:10px;
+    margin:10px 0;
+    border:solid 1px #333;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+.block .icon{
+    display:flex;
+    width:75px;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5em;
+    margin-left:-10px;
+}
+.block .desc{
+    flex: 1;
+    padding:0 10px;
+    border-left:solid 1px #333;
+}
+.block .desc h4{
+    text-align:center;
+}
+.block .desc p{
+    font-size:.7em;
+}

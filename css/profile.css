@@ -1,0 +1,49 @@
+#profileImage{
+    width:250px;
+    height:250px;
+    background-color:#333;
+    border-radius:50%;
+    border:solid 10px #d43396;
+    position:relative;
+    margin:0 auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-bottom:30px;
+}
+#profileImageBtn{
+    display:flex;
+    width:60px;
+    height:60px;
+    background-color:#6541c1;
+    color:#fff;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    position:absolute;
+    bottom:-30px;
+    left:50%;
+    margin-left:-30px;
+    font-size:1.5em;
+    text-decoration:none;
+}
+
+label{
+    font-size:.7em;
+    font-weight:bold;
+}
+div.form-control{
+    display:flex;
+    border-bottom:solid 1px #6541c1;
+    margin:10px 0;
+}
+div.form-control .icon{
+    display:block;
+    width:30px;
+    text-align:center;
+    color:#6541c1;
+}
+div.form-control input,div.form-control select{
+    flex:1;
+    border:none;
+    outline: 0;
+}

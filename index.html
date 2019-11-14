@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WellTalent</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/profile.css" rel="stylesheet">
+        <link href="css/education.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <div class="screen active" id="login">
+                <section>
+                    <div class="bigLogo">
+                        <img src="img/logo.png">
+                    </div>
+                    <label>Correo Electrónico</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" id="logMail" placeholder="Tu correo">
+                    </div>
+                    <label>Contraseña</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-unlock"></i></span>
+                        <input type="password" id="logPass" placeholder="Crea tu contraseña">
+                    </div>
+                    <a href="#" class="btn" id="logSend">Acceder</a>
+                    <a href="#forgot" class="links">Olvidé mi contraseña</a>
+                    <a href="#register" class="links">Aún no tengo una cuenta</a>
+                    <div class="terms">
+                        No olvides leer nuestros <a href="https://getwelltalent.com/terms.html" target="_blank">términos y condiciones</a> y <a href="https://getwelltalent.com/privacy.html" target="_blank">políticas de privacidad</a> para que estés enterado de cómo utilizamos, responsablemente, tu información.
+                    </div>
+                </section>
+            </div>
+            <div class="screen" id="register">
+                <section>
+                    <div class="bigLogo">
+                        <img src="img/logo.png">
+                    </div>
+                    <label>Correo Electrónico</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" id="regMail" placeholder="Tu correo">
+                    </div>
+                    <label>Contraseña</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-unlock"></i></span>
+                        <input type="password" id="regPass" placeholder="Crea tu contraseña">
+                    </div>
+                    <label>Confirma tu contraseña</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-certificate"></i></span>
+                        <input type="password" id="regPassConf" placeholder="Confirma tu contraseña">
+                    </div>
+                    <a href="#" class="btn" id="regSend">Registrarme</a>
+                    <a href="#login" class="links">Ya tengo una cuenta</a>
+                    <div class="terms">
+                        Al hacer click en "Registrar" aceptas los <a href="https://getwelltalent.com/terms.html" target="_blank">términos y condiciones</a> y <a href="https://getwelltalent.com/privacy.html" target="_blank">políticas de privacidad</a>. Ocasionalmente, enviamos correos electrónicos relacionados con tu cuenta.
+                    </div>
+                </section>
+            </div>
+            <div class="screen" id="forgot">
+                <section>
+                    <div class="bigLogo">
+                        <img src="img/logo.png">
+                    </div>
+                    <label>Correo Electrónico</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" id="forgotMail" placeholder="Tu correo">
+                    </div>
+                    <a href="#" class="btn" id="forgotSend">Cambiar contraseña</a>
+                    <a href="#register" class="links">Aún no tengo una cuenta</a>
+                    <a href="#login" class="links">Ya me acordé de mi contraseña</a>
+                    <div class="terms">
+                        No olvides leer nuestros <a href="https://getwelltalent.com/terms.html" target="_blank">términos y condiciones</a> y <a href="https://getwelltalent.com/privacy.html" target="_blank">políticas de privacidad</a> para que estés enterado de cómo utilizamos, responsablemente, tu información.
+                    </div>
+                </section>
+            </div>
+            <div class="screen" id="profile">
+                <header><h3>Perfil</h3></header>
+                <section>
+                    <div id="profileImage" style="background-image:url(img/prifile.png)">
+                        <a href="#" id="profileImageBtn"><i class="fas fa-camera"></i></a>
+                    </div>
+                    <input type="file" id="imageChanger" style="display:none;">
+                    <label for="name">Tu nombre</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <input type="text" id="name">
+                    </div>
+                    <label for="mail">Tu correo electrónico</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <input type="email" id="mail">
+                    </div>
+                    <label for="phone">Tu teléfono</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-phone"></i></span>
+                        <input type="tel" id="phone">
+                    </div>
+                    <label for="bday">Tu cumpleaños</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-calendar-day"></i></span>
+                        <select id="bday">
+                            <option value="">Día</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+                        </select>
+                        <select id="bmonth">
+                            <option value="">Mes</option><option value="1">Enero</option><option value="2">Febrero</option><option value="3">Marzo</option><option value="4">Abril</option><option value="5">Mayo</option><option value="6">Junio</option><option value="7">Julio</option><option value="8">Agosto</option><option value="9">Septiembre</option><option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option>
+                        </select>
+                        <select id="byear">
+                            <option value="">Año</option>
+                        </select>
+                    </div>
+                    <label for="sex">Tu sexo</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-venus-mars"></i></span>
+                        <select id="sex">
+                            <option value="">Sexo</option>
+                            <option value="f">Mujer</option>
+                            <option value="m">Hombre</option>
+                        </select>
+                    </div>
+                    <label for="country">Paìs</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-globe-americas"></i></span>
+                        <select id="country">
+                            <option value="">Paìs</option>
+                            <option value="1">México</option>
+                        </select>
+                    </div>
+                    <label for="state">Estado</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-map-signs"></i></span>
+                        <select id="state">
+                            <option value="">Estado</option>
+                        </select>
+                    </div>
+                    <label for="city">Ciudad</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-route"></i></span>
+                        <select id="city">
+                            <option value="">Ciudad</option>
+                        </select>
+                    </div>
+                    <label for="profession">Profesión</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fas fa-briefcase"></i></span>
+                        <select id="profession">
+                            <option value="">Profesión</option>
+                        </select>
+                    </div>
+                    <h3>Referencias</h3>
+                    <label for="facebook">Tu Facebook</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fab fa-facebook-f"></i></span>
+                        <input type="text" id="facebook" placeholder="https://www.facebook.com/tu_perfil">
+                    </div>
+                    <label for="instagram">Tu Instagram</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fab fa-instagram"></i></span>
+                        <input type="text" id="instagram" placeholder="https://www.instagram.com/tu_perfil">
+                    </div>
+                    <label for="linkedin">Tu LinkedIn</label>
+                    <div class="form-control">
+                        <span class="icon"><i class="fab fa-linkedin-in"></i></span>
+                        <input type="text" id="linkedin" placeholder="https://www.linkedin.com/in/tu-perfil/">
+                    </div>
+                </section>
+                <footer>
+                    <a href="#education" class="lateralblock"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#profile"><img class="logo" src="img/logo.png"></a>
+                    <a href="#jobs" class="lateralblock"><i class="fas fa-briefcase"></i></a>
+                </footer>
+            </div>
+            <div class="screen" id="education">
+                <header><h3>Educación</h3></header>
+                <section>
+                    <label for="languages">Idiomas que hablas</label>
+                    <div class="form-control">
+                        <select multiple id="languages">
+                            <option value="1">Español</option><option value="2">Inglés</option><option value="3">Francés</option><option value="4">Portugués</option><option value="5">Alemán</option><option value="6">Italiano</option><option value="7">Japonés</option><option value="8">Mandarín</option><option value="9">Coreano</option><option value="10">Ruso</option>
+                        </select>
+                    </div>
+                    <div class="addTitle">
+                        <h3>Estudios</h3>
+                        <a href="#" id="addEducationBtn"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <div id="schoolList">No has registrado estudios aún...</div>
+                </section>
+                <footer>
+                    <a href="#education" class="lateralblock active"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#profile"><img class="logo" src="img/logo.png"></a>
+                    <a href="#jobs" class="lateralblock"><i class="fas fa-briefcase"></i></a>
+                </footer>
+                <div id="addEducationModal" class="modal">
+                    <h2>Agregar Educación</h2>
+                    <div class="modal-body">
+                        <label>Grado de Estudios</label>
+                        <div class="form-control">
+                            <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                            <select id="grade">
+                                <option value="Primaria">Primaria</option>
+                                <option value="Secundaria">Secundaria</option>
+                                <option value="Preparatoria / Bachiller">Preparatoria / Bachiller</option>
+                                <option value="Licenciatura">Licenciatura</option>
+                                <option value="Posgrado">Posgrado</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="Certificación">Certificación</option>
+                                <option value="Taller">Taller</option>
+                            </select>
+                        </div>
+                        <label>Escuela / Institución</label>
+                        <div class="form-control">
+                            <span class="icon"><i class="fas fa-university"></i></span>
+                            <input type="text" id="school" placeholder="Nombre de la institución">
+                        </div>
+                        <label>Título</label>
+                        <div class="form-control">
+                            <span class="icon"><i class="fas fa-certificate"></i></span>
+                            <input type="text" id="title" placeholder="Título otorgado">
+                        </div>
+                        <label>Inicio</label>
+                        <div class="form-control">
+                            <span class="icon"><i class="fas fa-hourglass-start"></i></span>
+                            <select id="edu-start-month">
+                                <option value="">Mes</option>
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Mayo</option>
+                                <option value="6">Junio</option>
+                                <option value="7">Julio</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                            <select id="edu-start-year">
+                                <option value="">Año</option>
+                            </select>
+                        </div>
+                        <label>Fin</label>
+                        <div class="form-control">
+                            <span class="icon"><i class="fas fa-hourglass-end"></i></span>
+                            <select id="edu-end-month">
+                                <option value="">Mes</option>
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Mayo</option>
+                                <option value="6">Junio</option>
+                                <option value="7">Julio</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                            <select id="edu-end-year">
+                                <option value="">Año</option>
+                            </select>
+                        </div>
+                        <div class="btns">
+                            <a href="#" class="btn" id="addCourseBtn">Agregar</a>
+                            <a href="#" class="btn cancelModal">Cancelar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="screen" id="jobs">
+                <header><h3>Experiencia Laboral</h3></header>
+                <section>
+                    <div class="addTitle">
+                        <h3>Trabajos Anteriores</h3>
+                        <a href="#" id="addJobBtn"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <div id="jobList">No has agregado empleos aún...</div>
+                </section>
+                <footer>
+                    <a href="#education" class="lateralblock"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#profile"><img class="logo" src="img/logo.png"></a>
+                    <a href="#jobs" class="lateralblock active"><i class="fas fa-briefcase"></i></a>
+                </footer>
+                <div id="addJobModal" class="modal">
+                    <h2>Agregar Experiencia</h2>
+                    <div class="modal-body">
+                        <label>Puesto</label>
+                        <div class="form-control">
+                            <span class="icon"><i class="fas fa-briefcase"></i></span>
+                            <input type="text" id="jobPlace" placeholder="¿Cuál fue tu puesto?">
+                        </div>
+                        <label>Empresa / Institución</label>
+                        <div class="form-control">
+                            <span class="icon"><i class="fas fa-building"></i></span>
+                            <input type="text" id="company" placeholder="Lugar donde trabajaste">
+                        </div>
+                        <label>Inicio</label>
+                        <div class="form-control">
+                            <span class="icon"><i class="fas fa-hourglass-start"></i></span>
+                            <select id="job-start-month">
+                                <option value="">Mes</option>
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Mayo</option>
+                                <option value="6">Junio</option>
+                                <option value="7">Julio</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                            <select id="job-start-year">
+                                <option value="">Año</option>
+                            </select>
+                        </div>
+                        <label>Fin</label>
+                        <div class="form-control">
+                            <span class="icon"><i class="fas fa-hourglass-end"></i></span>
+                            <select id="job-end-month">
+                                <option value="">Mes</option>
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Mayo</option>
+                                <option value="6">Junio</option>
+                                <option value="7">Julio</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                            <select id="job-end-year">
+                                <option value="">Año</option>
+                            </select>
+                        </div>
+                        <div class="btns">
+                            <a href="#" class="btn" id="addJobSend">Agregar</a>
+                            <a href="#" class="btn cancelModal">Cancelar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="phonegap.js"></script>
+        <script src="js/zepto.js"></script>
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-storage.js"></script>
+        <script src="js/firebase.js"></script>
+        
+        <script src="js/users.js"></script>
+        <script src="js/world/countries.js"></script>
+        <script src="js/world/states.js"></script>
+        <script src="js/world/cities.js"></script>
+        <script src="js/world/world.js"></script>
+        
+        
+        <script src="js/main.js"></script>
+        <script src="js/access.js"></script>
+        <script src="js/profile.js"></script>
+        <script src="js/education.js"></script>
+        <script src="js/jobs.js"></script>
+    </body>
+</html>
