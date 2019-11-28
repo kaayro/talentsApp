@@ -25,8 +25,20 @@
     <icon src="img/icon.png" />
 		
     <platform name="android" />
+    <platform name="ios" />
 
+    <plugin name="cordova-plugin-media-capture" spec="~3.0.3" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
+    
+    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+        <string>need camera access to take pictures</string>
+    </edit-config>
+    <edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
+        <string>need microphone access to record sounds</string>
+    </edit-config>
+    <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+        <string>need photo library access to get pictures from there</string>
+    </edit-config>
 
     <allow-navigation href="http://*/*" />
     <allow-navigation href="https://*/*" />

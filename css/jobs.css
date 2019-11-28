@@ -1,0 +1,20 @@
+.bigButtons{
+    display:flex;
+    margin:10px 0;
+}
+.bigButtons .btn{
+    width:50%;
+    font-weight:bold;
+    font-size:0.8em;
+    display:flex;
+    align-items:center;
+}
+.bigButtons .btn:first-child{
+    margin-right:10px;
+}
+.desc{
+    padding:5px;
+    font-size:0.8em;
+    text-align:center;
+    color:#999;
+}

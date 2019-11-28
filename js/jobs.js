@@ -1,7 +1,9 @@
 var jobs = {
+    vidOpt:{limit:1,duration:120},
     init:function(){
-        $('#addJobBtn').click(jobs.addJobModal);
-        $('#addJobSend').click(jobs.addJob);
+        $('#addJobBtn').tap(jobs.addJobModal);
+        $('#addJobSend').tap(jobs.addJob);
+        $('#quest1').tap(jobs.questOne);
         jobs.getJobs();
     },
     addJobModal:function(){
@@ -50,5 +52,17 @@ var jobs = {
             });
         }else
             alert("Todos los campos son necesarios");
+    },
+    questOne:function(){
+        navigator.device.capture.captureVideo(jobs.captureSuccessOne, jobs.captureError, jobs.vidOpt);
+    },
+    captureError:function(e){
+        alert(error.code);
+    },
+    captureSuccessOne:function(r){
+        alert(r[0].fullPath);
+    },
+    captureSuccessTwo:function(r){
+        alert(r[0].fullPath);
     }
 };
