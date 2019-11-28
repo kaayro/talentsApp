@@ -2,7 +2,7 @@ var main = {
     auth: firebase.auth(),
     db: firebase.firestore(),
     init: function(){
-        document.addEventListener("deviceready",main.ready);
+        document.addEventListener("deviceready",main.ready,false);
     },
     ready: function(){
         user.verify(main.start);
