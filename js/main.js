@@ -12,6 +12,7 @@ var main = {
         world.init();
         pr.fillProfessions();
         access.init();
+        console.log(navigator.device);
     },
     start:function(){
         pr.init();
