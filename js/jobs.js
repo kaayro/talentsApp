@@ -55,7 +55,7 @@ var jobs = {
     },
     questOne:function(e){
         e.preventDefault();
-        console.log(navigator);
+        console.log(navigator.device);
         //navigator.device.capture.captureVideo(jobs.captureSuccessOne, jobs.captureError);
     },
     captureError:function(e){
