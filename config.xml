@@ -28,7 +28,6 @@
     <platform name="ios" />
 
     <plugin name="cordova-plugin-whitelist" source="npm" />
-    <plugin name="cordova-plugin-device" source="npm" />
     <plugin name="cordova-plugin-media-capture" source="npm" />
     
     <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">

@@ -3,6 +3,7 @@ var main = {
     db: firebase.firestore(),
     init: function(){
         document.addEventListener("deviceready",main.ready,false);
+        //main.ready();
     },
     ready: function(){
         user.verify(main.start);

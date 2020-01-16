@@ -1,11 +1,12 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyBwmRCEWOd1ZeQFgZ448mwQtjccwJmDoP8",
-    authDomain: "welltalent-947c5.firebaseapp.com",
-    databaseURL: "https://welltalent-947c5.firebaseio.com",
-    projectId: "welltalent-947c5",
-    storageBucket: "welltalent-947c5.appspot.com",
-    messagingSenderId: "331720796210",
-    appId: "1:331720796210:web:b801b00a6c3a8fa9"
+    apiKey: "AIzaSyB9MNhO5tzz69AldURrc4xg1Oe6_HphARM",
+    authDomain: "welltalent-6d81f.firebaseapp.com",
+    databaseURL: "https://welltalent-6d81f.firebaseio.com",
+    projectId: "welltalent-6d81f",
+    storageBucket: "welltalent-6d81f.appspot.com",
+    messagingSenderId: "322858691680",
+    appId: "1:322858691680:web:ce6a7aa95f94af51c82705",
+    measurementId: "G-WMFKVTC30V"
 };
 
 // Initialize Firebase
